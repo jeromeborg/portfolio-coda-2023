@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__) . '/src/require/common.php';
+require_once __DIR__ . '/src/require/common.php';
 
 // PARTNERS
 $is_active = true;
@@ -14,7 +14,7 @@ $partners = $response->fetchAll();
 <html class="no-js" lang="fr">
     <head>
         <!-- title -->
-        <title>POFO – Creative Agency, Corporate and Portfolio Multi-purpose Template</title>
+        <title>Le site du client</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />

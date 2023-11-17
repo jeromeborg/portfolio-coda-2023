@@ -5,7 +5,7 @@ switch ($_SERVER['SERVER_NAME']) {
     case 'portfolio.test':
         define('ENVIRONMENT', 'developpement');
 
-        $_bdd = array(
+        $paramsServer = array(
             'server'    => "192.168.56.56",
             'database'  => "portfolio",
             'username'  => "homestead",
@@ -24,7 +24,7 @@ switch ($_SERVER['SERVER_NAME']) {
     default:
         define('ENVIRONMENT', 'production');
 
-        $_bdd = array(
+        $paramsServer = array(
             'server' => "portfolio.mysql.db",
             'database' => "portfolio",
             'username' => "portfolio",
