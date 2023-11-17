@@ -9,7 +9,7 @@ if (ENVIRONMENT === 'developpement') {
 }
 
 try {
-    $bdLink = new PDO('mysql:host=' . $_bdd['server'] . ';port=' . $_bdd['port'] . ';dbname=' . $_bdd['database'] . ';charset=utf8', $_bdd['username'], $_bdd['password']);
+    $bdLink = new PDO('mysql:host=' . $paramsServer['server'] . ';port=' . $paramsServer['port'] . ';dbname=' . $paramsServer['database'] . ';charset=utf8', $paramsServer['username'], $paramsServer['password']);
     $bdLink->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     $bdLink->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
